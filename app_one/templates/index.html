@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script defer src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script defer src="{% static 'js/main.js' %}"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="page_container">
+        <div class="page">
+
+            {% include 'header.html' %}
+
+            <!-- Subheader -->
+            <section class="subheader">
+                <div class="subheader_left">
+                    <p>my</p>
+                    <h2>PROJECTS</h2>
+                </div>
+                <div class="subheader_right">
+                    <img src="{% static 'images/dan_logo.png' %}" alt="dan_logo">
+                </div>
+            </section>
+
+            <!-- Main -->
+            <main>
+                <div id="my_project1">
+                    <div id="int_project_container">
+                        <div id="int_project">
+                            <div class="int_project_header">
+                                <div class="my_logo"><img src="{% static 'images/dan_logo.png' %}" alt="dan_logo"></div>
+                                <div class="project_nav">
+                                    <small>
+                                        <a href="https://www.youtube.com/watch?v=LQ7AUwJWnTs&t=15s" target="_blank">video overview</a><br>
+                                        <!-- <a href="https://profiproject.herokuapp.com/" target="_blank">live demo</a><br> -->
+                                        <a href="https://github.com/Denys1004/social_interactive/tree/master/interactive" target="_blank">code</a>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="int_project_main">
+                                <div class="main_gif">
+                                    <img id="int_gif" src="{% static 'images/interactive_static.jpg' %}" alt_src="{% static 'images/interactive_400.gif' %}">
+                                </div>
+                                <div class="main_description">
+                                    <div id="int_project_title">
+                                        <a class="title int_title_class" alt_class="int_title" href="https://profiproject.herokuapp.com/" target="_blank">INT</a>
+                                    </div>
+                
+                                    <div id="int_project_text">
+                                        <p>INT is an interactive app, that allows users to create personal profile, post photos, videos, music and text, communicate with other users via chat, see News posted by other users, like (or unlike) it and comment posts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div id="int_project_footer">
+                                <p id="int_show_all" class="mybutton">show used technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="int_hidden_technologies">
+                        <div class="tech_logo_container">
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/python_color.png' %}" alt="">
+                                    <small>Python</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/django_color.png' %}" alt="">
+                                    <small>Django</small>
+                                </div>
+                            </div>
+                
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/js_color.png' %}" alt="">
+                                    <small>JavaScript</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/html_color.png' %}" alt="">
+                                    <small>HTML</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/css_color.png' %}" alt="">
+                                    <small>CSS</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/jquery_color.png' %}" alt="">
+                                    <small>jQuery</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/bootstrap_color.png' %}" alt="">
+                                    <small>Bootstrap</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/github_color.png' %}" alt="">
+                                    <small>GitHub</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/sqlite_color.png' %}" alt="">
+                                    <small>SQLite</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/heroku_color.png' %}" alt="">
+                                    <small>Heroku</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/sass_color.png' %}" alt="">
+                                    <small>SASS</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/ajax_color.png' %}" alt="">
+                                    <small>AJAX</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/aws_color.png' %}" alt="">
+                                    <small>AWS</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/mysql_color.png' %}" alt="">
+                                    <small>SQL</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="my_project2">
+                    <div id="e_com_project_container">
+                        <div id="e_com_project">
+                            <div class="e_com_project_header">
+                                <div class="my_logo"><img src="{% static 'images/dan_logo.png' %}" alt="dan_logo"></div>
+                                <div class="project_nav">
+                                    <small>
+                                        <!-- <a href="https://www.youtube.com/watch?v=LQ7AUwJWnTs&t=15s" target="_blank">video overview</a><br> -->
+                                        <!-- <a href="https://profiproject.herokuapp.com/" target="_blank">live demo</a><br> -->
+                                        <a href="https://github.com/Denys1004/e-commerce" target="_blank">code</a>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="e_com_project_main">
+                                <div class="main_gif">
+                                    <img id="e_com_gif" src="{% static 'images/Fierce_400.jpg' %}" alt_src="{% static 'images/Fierce_400.gif' %}">
+                                </div>
+                                <div class="main_description">
+                                    <div id="e_com_project_title">
+                                        <a class="title e_com_title_class" alt_class="e_com_title" href="https://profiproject.herokuapp.com/" target="_blank">Fierce</a>
+                                    </div>
+                
+                                    <div id="e_com_project_text">
+                                        <p>Fierce is an e-commerce Sports Wear store app. The main target for this project was to create Admin panel, where shop owners may create products, update product information, photos and categories.</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div id="e_com_project_footer">
+                                <p id="e_com_show_all" class="mybutton">show used technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="e_com_hidden_technologies">
+                        <div class="tech_logo_container">
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/python_color.png' %}" alt="">
+                                    <small>Python</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/django_color.png' %}" alt="">
+                                    <small>Django</small>
+                                </div>
+                            </div>
+                
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/js_color.png' %}" alt="">
+                                    <small>JavaScript</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/html_color.png' %}" alt="">
+                                    <small>HTML</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/css_color.png' %}" alt="">
+                                    <small>CSS</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/jquery_color.png' %}" alt="">
+                                    <small>jQuery</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/bootstrap_color.png' %}" alt="">
+                                    <small>Bootstrap</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/github_color.png' %}" alt="">
+                                    <small>GitHub</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/sqlite_color.png' %}" alt="">
+                                    <small>SQLite</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/heroku_color.png' %}" alt="">
+                                    <small>Heroku</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/sass_color.png' %}" alt="">
+                                    <small>SASS</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/ajax_color.png' %}" alt="">
+                                    <small>AJAX</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/aws_color.png' %}" alt="">
+                                    <small>AWS</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/mysql_color.png' %}" alt="">
+                                    <small>SQL</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="my_project3">
+                    <div id="profi_project_container">
+                        <div id="profi_project">
+                            <div class="profi_project_header">
+                                <div class="my_logo"><img src="{% static 'images/dan_logo.png' %}" alt="dan_logo"></div>
+                                <div class="project_nav">
+                                    <small>
+                                        <a href="https://www.youtube.com/watch?v=nr34umoaAXY&t=250s" target="_blank">video overview</a><br>
+                                        <a href="https://profiproject.herokuapp.com/" target="_blank">live demo</a><br>
+                                        <a href="https://github.com/Denys1004/profi-live" target="_blank">code</a>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="profi_project_main">
+                                <div class="main_gif">
+                                    <img id="profi_gif" src="{% static 'images/Profi_400.jpg' %}" alt_src="{% static 'images/Profi_400.gif' %}">
+                                </div>
+                                <div class="main_description">
+                                    <div id="profi_project_title">
+                                        <a class="title profi_title_class" alt_class="profi_title" href="https://profiproject.herokuapp.com/" target="_blank">Profi</a>
+                                    </div>
+                
+                                    <div id="profi_project_text">
+                                        <p>Profi is app for people who looking for help with a job, and for people who looking for an extra job. Allows to create job in the pool or pick up job from the pool. User friendly dashboard,  profile Page, responsive design.</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div id="profi_project_footer">
+                                <p id="profi_show_all" class="mybutton">show used technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="profi_hidden_technologies">
+                        <div class="tech_logo_container">
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/python_color.png' %}" alt="">
+                                    <small>Python</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/django_color.png' %}" alt="">
+                                    <small>Django</small>
+                                </div>
+                            </div>
+                
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/js_color.png' %}" alt="">
+                                    <small>JavaScript</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/html_color.png' %}" alt="">
+                                    <small>HTML</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/css_color.png' %}" alt="">
+                                    <small>CSS</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/jquery_color.png' %}" alt="">
+                                    <small>jQuery</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/bootstrap_color.png' %}" alt="">
+                                    <small>Bootstrap</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/github_color.png' %}" alt="">
+                                    <small>GitHub</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/sqlite_color.png' %}" alt="">
+                                    <small>SQLite</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/heroku_color.png' %}" alt="">
+                                    <small>Heroku</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/sass_color.png' %}" alt="">
+                                    <small>SASS</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/ajax_color.png' %}" alt="">
+                                    <small>AJAX</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/aws_color.png' %}" alt="">
+                                    <small>AWS</small>
+                                </div>
+                            </div>
+                            <div class="tech_logo">
+                                <div class="logo_description">
+                                    <img src="{% static 'images/mysql_color.png' %}" alt="">
+                                    <small>SQL</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            {% include 'footer.html' %}
+
+        </div>
+    </div>
+
+</body>
+</html>

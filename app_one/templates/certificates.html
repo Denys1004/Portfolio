@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script defer src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+    <!--  portfolio gallery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script defer src="{% static 'js/main.js' %}"></script>
+    <title>Certificates</title>
+</head>
+<body>
+    <div class="page_container">
+        <div class="page">
+
+            {% include 'header.html' %}
+
+            <!-- Subheader -->
+            <section class="subheader">
+                <div class="subheader_left">
+                    <p>my</p>
+                    <h2>CERTIFICATES</h2>
+                </div>
+                <div class="subheader_right">
+                    <img src="{% static 'images/dan_logo.png' %}" alt="dan_logo">
+                </div>
+            </section>
+            
+            <main>
+                <div class="tz-gallery">
+                    <div class="all_cartificates">
+
+                        <div class="certificate_container">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/Python Full Stack.jpg' %}">
+                                    <img src="{% static 'images/Python Full Stack.jpg' %}" alt="Python">
+                                </a>
+                            </div>
+                            <div class="certificate_name">
+                                <p>Python Full Stack</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certificate_container margins">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/JavaScript for Web Designers.jpg' %}">
+                                    <img src="{% static 'images/JavaScript for Web Designers.jpg' %}" alt="JavaScript for Web Designers">
+                                </a>
+                                
+                            </div>
+                            <div class="certificate_name">
+                                <p>JavaScript for Web Designers</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate_container">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/Learning the JavaScript Language.jpg' %}">
+                                    <img src="{% static 'images/Learning the JavaScript Language.jpg' %}" alt="Learning the JavaScript Language">
+                                </a>
+                            </div>
+                            <div class="certificate_name">
+                                <p>Learning the JavaScript Language</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate_container">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/HTML Essential Training.jpg' %}">
+                                    <img src="{% static 'images/HTML Essential Training.jpg' %}" alt="HTML Essential Training">
+                                </a>
+                            </div>
+                            <div class="certificate_name">
+                                <p>HTML Essential Training</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certificate_container margins">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/Sass Essential Training.jpg' %}">
+                                    <img src="{% static 'images/Sass Essential Training.jpg' %}" alt="Sass Essential Training">
+                                </a>
+                                
+                            </div>
+                            <div class="certificate_name">
+                                <p>Sass Essential Training</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate_container">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/Web Design.jpg' %}">
+                                    <img src="{% static 'images/Web Design.jpg' %}" alt="Web Design">
+                                </a>
+                            </div>
+                            <div class="certificate_name">
+                                <p>Web Design, HTML5 & CSS3</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate_container">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/Illustrator 2020 Essential Training.jpg' %}">
+                                    <img src="{% static 'images/Illustrator 2020 Essential Training.jpg' %}" alt="Illustrator 2020 Essential Training">
+                                </a>
+                            </div>
+                            <div class="certificate_name">
+                                <p>Illustrator 2020 Essential Training</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certificate_container margins">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/Time Management_ Working from Home.jpg' %}">
+                                    <img src="{% static 'images/Time Management_ Working from Home.jpg' %}" alt="Time Management_ Working from Home">
+                                </a>
+                                
+                            </div>
+                            <div class="certificate_name">
+                                <p>Time Management, Working from Home</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate_container">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/Communication Tips.jpg' %}">
+                                    <img src="{% static 'images/Communication Tips.jpg' %}" alt="Communication Tips">
+                                </a>
+                            </div>
+                            <div class="certificate_name">
+                                <p>Communication Tips</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate_container">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/Embracing Unexpected Change.jpg' %}">
+                                    <img src="{% static 'images/Embracing Unexpected Change.jpg' %}" alt="Embracing Unexpected Change">
+                                </a>
+                            </div>
+                            <div class="certificate_name">
+                                <p>Embracing Unexpected Change</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certificate_container margins">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/Leveraging the Connection between Well-Being and Productivity.jpg' %}">
+                                    <img src="{% static 'images/Leveraging the Connection between Well-Being and Productivity.jpg' %}" alt="Leveraging the Connection between Well-Being and Productivity">
+                                </a>
+                                
+                            </div>
+                            <div class="certificate_name">
+                                <p>Leveraging Productivity</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate_container">
+                            <div class="certificate_image">
+                                <a class="lightbox" href="{% static 'images/Communication within Teams.jpg' %}">
+                                    <img src="{% static 'images/Communication within Teams.jpg' %}" alt="Communication within Teams">
+                                </a>
+                            </div>
+                            <div class="certificate_name">
+                                <p>Communication within Teams</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+
+
+            {% include 'footer.html' %}
+
+        </div>
+    </div>
+    
+    <!-- Gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+
+</body>
+</html>

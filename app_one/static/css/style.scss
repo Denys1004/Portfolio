@@ -1,0 +1,513 @@
+:root{
+    --second_font: 'Ramabhadra', sans-serif;
+    --main_font: 'Work Sans', sans-serif;
+}
+
+$white:#ffffff;
+$grey: #adadb1;
+$dark_grey: #515151;
+$gradient_light:#3d3e42;
+$gradient_dark:#18181a;
+$bg_gradient_light:#a5a5a5;
+$bg_gradient_dark:#2a2b2e;
+
+html{
+    scroll-behavior: smooth;
+}
+h1, h2, p{
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+.page_container{
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle at center,  $bg_gradient_light 0%, $bg_gradient_dark 100%);
+    .page{
+        max-width: 1040px;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+
+// Header
+header{
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+    animation-delay: .5s; 
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 80px;
+    
+    .my_title{
+        padding-left: 4px;
+        margin-bottom: 5px;
+        p{
+            font-family: var(--main_font);
+            font-size: 30px;
+            font-weight: 300;
+            color: $white;
+            letter-spacing: 1.2px;
+        }
+    }
+    .my_name{
+        margin-top: -5px;
+        margin-bottom: -5px;
+        h1{
+            font-family: var(--second_font); 
+            font-size: 60.96px;
+            letter-spacing: 2px;
+            color: $white;
+        }
+    }
+    .my_menu{
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5px;
+        margin-top: 5px;
+        a{
+            font-family: var(--main_font);
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            color: $grey;
+            transition: .5s;
+            margin-left: 20px;
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
+
+#active_page{
+    color: $white;
+}
+
+// Subheader
+/* section subheader */
+.subheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+    .subheader_left{
+        p{
+            font-family: var(--main_font);
+            font-size: 20px;
+            font-weight: 300;
+            color: $grey;
+            margin-bottom: 5px;
+        }
+        h2{
+            font-family: var(--second_font);  
+            font-size: 40px;
+            letter-spacing: 1px;
+            color: $white;
+            margin-top: -4px;
+            margin-bottom: 5px;
+        }
+    }
+    .subheader_right{
+        img{
+            width: 70px;
+            height: 70px;
+            opacity: 0;
+            animation: spin 1s forwards;
+            animation-delay: .7s;
+        }
+    }
+}
+
+@import'./int';
+@import'./e_com';
+@import'./profi';
+
+
+.all_info{
+    margin-top: 20px;
+    .info_container{
+        display: flex;
+        align-items: center;
+        img{
+            width: 28px;
+            height: 28px;
+            margin-right: 12px;
+        }
+        a{
+            color: $white;
+            letter-spacing: 2px;
+            font-size: 18px;
+            font-weight: 300;
+            &:hover{
+                color: $grey;
+            }
+        }
+        p{
+            color: $white;
+            letter-spacing: 2px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }    
+}
+
+#diplomas{
+    font-family: var(--second_font);  
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: $white;
+    margin-top: -9px;
+}
+
+
+
+.all_cartificates{
+    text-align: center;
+    .certificate_container{
+        display: inline-block;
+        margin-top: 20px;
+        .certificate_image{
+            max-width: 314px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .certificate_name{
+            text-align: center;
+            p{
+                margin-top: 5px;
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.8px;
+                color: $white;
+            }
+        }
+    }
+}
+
+.margins{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+
+
+// Footer
+footer{
+    margin-top: 40px;
+    .social_media{
+        width: 260px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            img{
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}
+
+
+
+/* MEDIA SCREEN */
+@media screen and (max-width: 375px){
+    header{
+        .my_title{
+            padding-left: 2px;
+            p{
+                font-size: 15.8px;
+                letter-spacing: 0.8px;
+                margin-bottom: 3px;
+                font-weight: 100;
+            }
+        }
+        .my_name{
+            h1{
+                font-size: 41px;
+                letter-spacing: 2px;
+            }
+        }
+        .my_menu{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 2px;
+            margin-top: 5px;
+            a{
+                margin-left: 0px;
+                margin-right: 16px;
+                font-weight: 100;
+                font-size: 15px;
+            }
+        }
+    }
+
+
+
+    .subheader{
+        margin-top: 60px;
+        .subheader_left{
+            p{
+                font-size: 18px;
+            }
+            h2{
+                font-size: 32px;
+                margin-top: -5px;
+            }
+        }
+        .subheader_right{
+            img{
+                width: 46px;
+                height: 46px;
+            }
+        }
+    }
+
+
+    #int_project_container{
+        #int_project{
+            padding: 20px;
+            .int_project_header{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .my_logo{
+                    img{
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                .project_nav{
+                    small{
+                        a{
+                            font-size: 13px;
+                            margin-left: 18px;
+                        }
+                    }
+                }
+            }
+            .int_project_main{
+                flex-direction: column;
+                .main_gif{
+                    margin-right: 0;
+                    flex:1;
+                    #int_gif{
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 10px;
+                    }
+                }
+                .main_description{
+                    flex:1;
+                    #int_project_title{
+                        margin-bottom: 5px;
+                        .title{
+                            font-size: 3rem;
+                        }
+                    }
+                    #int_project_text{
+                        p{
+                            letter-spacing: 0.4px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            #int_project_footer{
+                padding: 18px 0 0;
+            }
+        }
+    }
+
+#e_com_project_container{
+    #e_com_project{
+        padding: 20px;
+        .e_com_project_header{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .my_logo{
+                img{
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            .project_nav{
+                small{
+                    a{
+                        font-size: 13px;
+                        margin-left: 18px;
+                    }
+                }
+            }
+        }
+        .e_com_project_main{
+            flex-direction: column;
+            .main_gif{
+                margin-right: 0;
+                flex:1;
+                #e_com_gif{
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+                }
+            }
+            .main_description{
+                flex:1;
+                #e_com_project_title{
+                    margin-bottom: 5px;
+                    .title{
+                        font-size: 3rem;
+                    }
+                }
+                #e_com_project_text{
+                    p{
+                        letter-spacing: 0.4px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        #e_com_project_footer{
+            padding: 18px 0 0;
+        }
+    }
+}
+
+
+#profi_project_container{
+    #profi_project{
+        padding: 20px;
+        .profi_project_header{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            .my_logo{
+                img{
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            .project_nav{
+                small{
+                    a{
+                        font-size: 13px;
+                        margin-left: 18px;
+                    }
+                }
+            }
+        }
+        .profi_project_main{
+            flex-direction: column;
+            .main_gif{
+                margin-right: 0;
+                flex:1;
+                #profi_gif{
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+                }
+            }
+            .main_description{
+                flex:1;
+                #profi_project_title{
+                    margin-bottom: 5px;
+                    .title{
+                        font-size: 3rem;
+                    }
+                }
+                #profi_project_text{
+                    p{
+                        letter-spacing: 0.4px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        #profi_project_footer{
+            padding: 18px 0 0;
+        }
+    }
+}
+    .margins{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+@media screen and (max-width: 1038px){
+    .margins{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .certificate_container{
+        padding-top: 20px;
+        .certificate_image{
+            margin: 0px 20px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Animation */
+@keyframes fadeUp{
+    0%{
+        transform: translateY(-40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+/* Spinning logo */
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(-360deg);
+
+    }
+}
+
+
+
