@@ -5,7 +5,9 @@
 $('#int_project_container').hover(function(){
     let img_1_Path = $('#int_gif').attr('alt_src');
     let img_2_Path = $('#int_gif').attr('src');
+    $('#int_project_title a').css('color', '#17a2b8')
 
+    
     $('#int_gif').attr('src', img_1_Path);
     $('#int_gif').attr('alt_src', img_2_Path); 
 })
@@ -31,6 +33,7 @@ $('#int_show_all').click(function(){
 $('#e_com_project_container').hover(function(){
     let img_1_Path = $('#e_com_gif').attr('alt_src');
     let img_2_Path = $('#e_com_gif').attr('src');
+    $('#e_com_project_title a').css('color', 'red')
 
     $('#e_com_gif').attr('src', img_1_Path);
     $('#e_com_gif').attr('alt_src', img_2_Path); 
@@ -58,6 +61,7 @@ $('#e_com_show_all').click(function(){
 $('#profi_project_container').hover(function(){
     let img_1_Path = $('#profi_gif').attr('alt_src');
     let img_2_Path = $('#profi_gif').attr('src');
+    $('#profi_project_title a').css('color', 'yellow')
 
     $('#profi_gif').attr('src', img_1_Path);
     $('#profi_gif').attr('alt_src', img_2_Path); 

@@ -30,9 +30,28 @@
         <div class="page">
 
             {% include 'header.html' %}
+          
+            <div id="logo_description_section">
+                <div class="logo_description_container">
+                    <div class="logo_description_text_container">
+                        <div class="logo_description_img_container">
+                            <div class="logo_description_img">
+                                <img id="myphoto" src="{% static 'images/2.jpg' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="logo_description_text">
+                            <h1>ABOUT</h1>
+                            <p>Motivated and knowledge driven full stack developer with background in <span class="myskills">Python</span>, <span class="myskills">JavaScript</span>, <span class="myskills">HTML5</span>, <span class="myskills">CSS</span>, and building web applications from the ground up.
+                                <br><span class="myskills">6+</span> years of experience in <span class="myskills">Graphic Design</span> as well as expertise in print, packaging, marketing & advertising design.
+                                <br>Advanced skills in Adobe Creative Suite, including <span class="myskills">Photoshop</span>, <span class="myskills">Acrobat</span>, <span class="myskills">Illustrator</span> and <span class="myskills">InDesign</span>.
+                                <br>Currently looking to join a team of passionate developers to create user-friendly web applications and products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Subheader -->
-            <section class="subheader">
+            <section class="subheader mt-1">
                 <div class="subheader_left">
                     <p>my</p>
                     <h2>CONTACTS</h2>
@@ -45,14 +64,14 @@
             <main>
                 <div class="all_info">
                     <div class="info_container">
-                        <img src="{% static 'images/mail.svg' %}" alt="">
+                        <img src="{% static 'images/cellphone.svg' %}" alt="">
                         <p>+1(206) 799-0080</p>
                     </div>
                 </div>
 
                 <div class="all_info">
                     <div class="info_container">
-                        <img src="{% static 'images/cellphone.svg' %}" alt="">
+                        <img src="{% static 'images/mail.svg' %}" alt="">
                         <p>krychevskyidenys@gmail.com</p>
                     </div>
                 </div>
@@ -87,7 +106,11 @@
             </main>
 
         </div>
+        <br>
+        <br>
     </div>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     
     <!-- Gallery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
