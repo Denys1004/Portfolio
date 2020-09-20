@@ -178,7 +178,9 @@ header{
     margin-top: -9px;
 }
 
-
+#design_link{
+    font-weight: 600;
+}
 
 .all_cartificates{
     text-align: center;
@@ -341,6 +343,14 @@ footer{
             .logo_description_img_container{
                 .logo_description_img{
                     padding: 20px 20px 20px 10px;
+                    text-align: center;
+                    #myphoto{
+                        width: 260px;
+                        height: 260px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        border: 4px solid white;
+                    }
                 }
             }
         }
